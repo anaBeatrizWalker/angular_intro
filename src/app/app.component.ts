@@ -6,5 +6,11 @@ import { Component, VERSION } from '@angular/core';
   styleUrls: ['./app.component.css'],
 })
 export class AppComponent {
-  name = 'Angular' + VERSION.major;
+  name = 'Ana Beatriz';
+  nascimento = 2001;
+
+  //Método
+  getIdade() {
+    return 2022 - this.nascimento;
+  }
 }
