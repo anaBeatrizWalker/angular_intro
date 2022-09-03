@@ -15,5 +15,11 @@
 <hr />
 <!--Contador sem precisar fazer uma rotina-->
 <h3>Contador: {{ counter }}</h3>
-
 <h3>Timer: {{ getMinutos() }}'{{ getSegundos() }}''</h3>
+<hr />
+<!--If e For-->
+<div *ngFor="let n of [25, 7, 8, 9, 12, 90, 67, 3]">
+  {{ n }} =
+  <span *ngIf="n % 2 == 0">Par</span>
+  <span *ngIf="n % 2 != 0">Ímpar</span>
+</div>
